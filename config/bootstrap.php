@@ -3,7 +3,7 @@
 use Symfony\Component\Dotenv\Dotenv;
 
 //require dirname(__DIR__).'/vendor/autoload.php';
-require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
+require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor/autoload.php';
 
 // Load cached env vars if the .env.local.php file exists
 // Run "composer dump-env prod" to create it (requires symfony/flex >=1.2)
