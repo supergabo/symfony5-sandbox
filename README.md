@@ -24,7 +24,7 @@ Ingresa a la carpeta y si necesitas que tu carpeta *vendor* apunte afuera de tu 
 * config/bootstrap.php
 * bin/console
 
-* composer.json
+# composer.json
 
 La línea que se agregó fue en la sección "config" donde se indica la ruta donde se encuentra la carpeta *vendor*:
 "vendor-dir": "../../../frameworks/Symfony5/Symfony/vendor"
@@ -37,12 +37,12 @@ Lo mejor es usar rutas relativas por el motivo de los siguientes dos archivos.
 
 En particular es mejor usar dirname(__DIR__) para que PHP sepa en que directorio estas ejecutando tu aplicación.
 
-* bin/console
+# bin/console
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta vendor:
 require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
 
-* config/bootstrap.php
+# config/bootstrap.php
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta vendor:
 require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
