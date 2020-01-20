@@ -10,7 +10,7 @@ El Sandbox contiene tres archivos modificados:
 * config/bootstrap.php
 * bin/console
 
-Instalación de Symfony 5 para crear tu primera aplicación con las librerias esenciales de Symfony 5 
+#Instalación de Symfony 5 para crear tu primera aplicación con las librerias esenciales de Symfony 5 
 
 Descarga el sandbox a una carpeta donde tengas la configuración para mostrar tu sitio web :
 Ejemplo: 
@@ -44,7 +44,7 @@ require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.
 
 Si necesitas que apunte a otro directorio es ncesario que estos tres archivos apunten correctamente a la carpeta vendor y autoload.php
 
-Ejecuta composer:
+#Ejecuta composer:
 composer update
 
 Composer instalará la carpeta *vendor* en la ruta relativa indicada en el composer.json
