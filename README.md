@@ -10,11 +10,12 @@ El Sandbox contiene tres archivos modificados:
 * config/bootstrap.php
 * bin/console
 
-#Instalación de Symfony 5 para crear tu primera aplicación con las librerias esenciales de Symfony 5 
+# Instalación de Symfony 5 para crear tu primera aplicación con las librerias esenciales de Symfony 5 
 
-Descarga el sandbox a una carpeta donde tengas la configuración para mostrar tu sitio web :
-Ejemplo: 
-#/home/supergabo/www/html/MiAppSymfony (se reemplaza el nombre del sandbox por MiAppSymfony)
+Descarga el sandbox a una carpeta donde tengas la configuración para mostrar tu sitio web:
+
+# Ejemplo: 
+/home/supergabo/www/html/MiAppSymfony (se reemplaza el nombre del sandbox por MiAppSymfony)
 o en Windows puedes usar la ruta que genera Bitnami WAMP:
 C:\Bitnami\wampstack7\apache\htdocs\MiAppSymfony
 
@@ -28,9 +29,9 @@ La línea que se agregó fue en la sección "config" donde se indica la ruta don
 "vendor-dir": "../../../frameworks/Symfony5/Symfony/vendor"
 
 Yo utilice una ruta de tres niveles por lo que tu htdocs debe estar a la misma altura de estos tres niveles, ejemplo:
-# /home/supergabo/www/html/symfony5-sandbox
+/home/supergabo/www/html/symfony5-sandbox
 El vendor se va a descargar a:
-# /home/supergabo/frameworks/Symfony5/Symfony/vendor
+/home/supergabo/frameworks/Symfony5/Symfony/vendor
 Lo mejor es usar rutas relativas por el motivo de los siguientes dos archivos.
 
 En particular es mejor usar dirname(__DIR__) para que PHP sepa en que directorio estas ejecutando tu aplicación.
