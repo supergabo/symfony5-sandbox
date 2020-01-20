@@ -1,8 +1,8 @@
 {
-    "name": "gsilvav/sf5-sandbox",
+    "name": "supergabo/symfony5-sandbox",
     "description": "Sandbox de Symfony 5",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
