@@ -32,9 +32,10 @@ Ingresa a la carpeta y si necesitas que tu carpeta *vendor* apunte afuera de tu 
 # composer.json
 
 La línea que se agregó fue en la sección "config" donde se indica la ruta donde se encuentra la carpeta *vendor*:
+
 "vendor-dir": "../../../frameworks/Symfony5/Symfony/vendor"
 
-Yo utilice una ruta de tres niveles por lo que tu htdocs debe estar a la misma altura de estos tres niveles, ejemplo:
+Yo utilicé una ruta de tres niveles por lo que tu htdocs debe estar a la misma altura de estos tres niveles, ejemplo:
 
 /home/supergabo/www/html/symfony5-sandbox
 
@@ -44,19 +45,19 @@ El vendor se va a descargar a:
 
 Lo mejor es usar rutas relativas por el motivo de los siguientes dos archivos.
 
-En particular es mejor usar dirname(__DIR__) para que PHP sepa en que directorio estas ejecutando tu aplicación.
+En particular es mejor usar dirname(\_\_DIR\_\_) para que PHP sepa en que directorio estas ejecutando tu aplicación.
 
 # bin/console
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta *vendor*:
 
-require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
+require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
 
 # config/bootstrap.php
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta *vendor*:
 
-require dirname(__DIR__).'../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
+require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
 
 Si necesitas que apunte a otro directorio es necesario que estos tres archivos apunten correctamente a la carpeta *vendor* y autoload.php
 
