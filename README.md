@@ -51,13 +51,13 @@ En particular es mejor usar dirname(\_\_DIR\_\_) para que PHP sepa en que direct
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta *vendor*:
 
-require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
+require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor/autoload.php';
 
 # config/bootstrap.php
 
 Se modificó la linea donde debe apuntar de tu directorio del sandbox al autoload de la carpeta *vendor*:
 
-require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor"/autoload.php';
+require dirname(\_\_DIR\_\_).'/../../../frameworks/Symfony5/Symfony/vendor/autoload.php';
 
 Si necesitas que apunte a otro directorio es necesario que estos tres archivos apunten correctamente a la carpeta *vendor* y autoload.php
 
